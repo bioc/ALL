@@ -1,0 +1,18 @@
+ROOT=ALLintro
+
+#$(ROOT).pdf: $(ROOT).ps
+#	ps2pdf $(ROOT).ps $(ROOT).pdf
+
+$(ROOT).ps: $(ROOT).dvi
+	dvips -o $(ROOT).ps $(ROOT).dvi
+
+$(ROOT).dvi: $(ROOT).tex
+	latex $(ROOT)
+	latex $(ROOT)
+
+$(ROOT).tex: $(ROOT).Rnw
+	echo "library(tools); Sweave('$(ROOT).Rnw')" | R --no-save
+	#echo "library(tools); Sweave('$(ROOT).Rnw')" | /home/stvjc/R/bin/Rterm.exe --vanilla
+
+edit:
+	vi $(ROOT).Rnw
