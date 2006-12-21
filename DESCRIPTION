@@ -7,4 +7,5 @@ Description: Data of T- and B-cell Acute Lymphocytic Leukemia from the Ritz Labo
 Maintainer: Xiaochun Li <xiaochun@jimmy.harvard.edu>
 License: GPL
 Depends: Biobase (>= 1.12.0)
+Suggests: randomForest
 biocViews: ExperimentData
