@@ -65,10 +65,10 @@ show(fALL)
 
 allx2 <- data.frame(t(exprs(fALL)), class=ALL$BT)
 @
-<<>>=
-library(randomForest)
-rf1 <- randomForest(class~.,data=allx2)
-print(rf1)
-
+<<fig=TRUE>>=
+library(rpart)
+rp1 <- rpart(class~.,data=allx2)
+plot(rp1)
+text(rp1)
 @
 \end{document}
