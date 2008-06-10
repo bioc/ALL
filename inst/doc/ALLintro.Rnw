@@ -1,5 +1,5 @@
 %\VignetteIndexEntry{ALL data intro}
-%\VignetteDepends{ALL, randomForest}
+%\VignetteDepends{ALL, rpart}
 %\VignettePackage{ALL}
 %
 % NOTE -- ONLY EDIT THE .Rnw FILE!!!  The .tex file is
