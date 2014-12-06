@@ -1,6 +1,6 @@
 Package: ALL
 Title: A data package 
-Version: 1.9.0
+Version: 1.9.1
 Date: 2009-07-22
 Author: Xiaochun Li
 Description: Data of T- and B-cell Acute Lymphocytic Leukemia from the Ritz Laboratory at the DFCI (includes Apr 2004 versions)
@@ -8,4 +8,4 @@ Maintainer: Robert Gentleman <rgentlem@gmail.com>
 License: Artistic-2.0
 Depends: R (>= 2.10), Biobase (>= 2.5.5)
 Suggests: rpart
-biocViews: ExperimentData, Cancer, Leukemia
+biocViews: ExperimentData, CancerData, LeukemiaCancerData
